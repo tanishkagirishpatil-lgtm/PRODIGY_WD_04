@@ -1870,3 +1870,50 @@ section{
         font-size:18px;
     }
 }
+
+@media (max-width: 768px) {
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .experience-container,
+    .about-container,
+    .contact-container,
+    .hero-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .experience-left,
+    .experience-right,
+    .contact-info,
+    .contact-form{
+        width: 100%;
+    }
+
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .highlights-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card,
+    .highlight-card,
+    .project-card{
+        width: 100%;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}

@@ -712,15 +712,11 @@ section{
 /* Soft Skills */
 
 .soft-skills{
-
     display:grid;
+    grid-template-columns:repeat(3,minmax(250px,1fr));
+    gap:24px;
 
-    grid-template-columns:
-    repeat(3,1fr);
-
-    gap:18px;
-
-    max-width:900px;
+    width:100%;
 }
 
 .soft-skills span{
@@ -729,7 +725,7 @@ section{
 
     border:1px solid var(--border);
 
-    padding:12px 18px;
+    padding:16px 22px;
 
     border-radius:12px;
 
@@ -763,6 +759,16 @@ section{
 }
 
 .soft-skills span{
+        background:white;
+    border:1px solid var(--border);
+
+    padding:16px 22px;
+
+    min-height:60px;
+
+    border-radius:12px;
+
+    font-weight:500;
 
     display:flex;
     align-items:center;
@@ -1750,5 +1756,117 @@ section{
     section {
         padding-left: 20px;
         padding-right: 20px;
+    }
+}
+
+@media (max-width:768px){
+
+    section{
+        padding:80px 25px;
+    }
+
+    /* HERO */
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-description{
+        max-width:100%;
+        margin:auto;
+    }
+
+    .hero-buttons,
+    .social-links,
+    .connect-section{
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+
+    .hero h2{
+        font-size:2rem;
+    }
+
+    .hero h3{
+        font-size:1.5rem;
+    }
+
+    /* ABOUT */
+    .about-container{
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "text"
+        "image"
+        "cards"
+        "journey"
+        "drive";
+    }
+
+    .about-cards{
+        grid-template-columns:1fr;
+    }
+
+    .drive-card{
+        width:100%;
+        max-width:100%;
+        margin:0;
+    }
+
+    /* SKILLS */
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .soft-skills{
+        grid-template-columns:1fr;
+    }
+
+    /* PROJECTS */
+    .projects-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* EXPERIENCE */
+    .experience-container{
+        grid-template-columns:1fr;
+    }
+
+    .highlights-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* CONTACT */
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-info{
+        min-height:auto;
+    }
+
+    /* CENTER EVERYTHING */
+    .section-title,
+    .skill-subtitle,
+    .contact-intro{
+        text-align:center;
+    }
+
+    /* NAVBAR */
+    .navbar{
+        width:95%;
+        padding:15px 20px;
+    }
+
+    .nav-links,
+    .resume-btn{
+        display:none;
+    }
+
+    .logo h3{
+        font-size:18px;
     }
 }

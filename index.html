@@ -48,7 +48,9 @@
 
         </nav>
 
-        <a href="assets/resume.pdf" class="resume-btn">
+       <a href="assets/resume/Tanishka_Patil_Resume.pdf"
+   download
+   class="resume-btn">
             <i class="fa-solid fa-download"></i>
             Resume
         </a>
@@ -81,9 +83,11 @@
                     View Projects
                 </a>
 
-                <a href="assets/resume.pdf" class="secondary-btn">
-                    Download Resume
-                </a>
+                <a href="assets/resume/Tanishka_Patil_Resume.pdf"
+   download
+   class="secondary-btn">
+   Download Resume
+</a>
 
             </div>
 
@@ -97,7 +101,7 @@
                         <i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/tanishka-patil-0520b0378/" target="_blank">
                         <i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:tanishkapatil@example.com" target="_blank">
+                    <a href="mailto:tanishkagirishpatil@gmail.com">
                         <i class="fa-solid fa-envelope"></i></a>
                     <a href="https://www.instagram.com/tanishka_patil/" target="_blank">
                         <i class="fab fa-instagram"></i></a>
@@ -117,7 +121,7 @@
 
                <div class="dots dots1"></div>
                <div class="dots dots2"></div>
-               <img src="images/profile.png" class="profile-img" alt="Profile">
+               <img src="images/profile.jpeg" class="profile-img" alt="Profile">
                
         </div>
 
@@ -125,8 +129,8 @@
 
 
 
-<!-- About Section -->
-<section class="about" id="about">
+ <!-- About Section -->
+ <section class="about" id="about">
 
     <div class="section-title">
         <h2>About Me</h2>
@@ -256,11 +260,11 @@
 
     </div>
 
-</section>
+ </section>
 
 
     <!-- Skills Section -->
-<section class="skills" id="skills">
+ <section class="skills" id="skills">
 
     <div class="section-title">
         <h2>My Skills</h2>
@@ -324,13 +328,13 @@
 
     </div>
 
-</section>
+  </section>
 
 
 
-<!-- Projects Section -->
+ <!-- Projects Section -->
 
-<section class="projects" id="projects">
+ <section class="projects" id="projects">
 
     <div class="section-title">
         <h2>My Projects</h2>
@@ -521,12 +525,12 @@
 
     </div>
 
-</section>
+ </section>
 
 
-<!-- Experience Section -->
+ <!-- Experience Section -->
 
-<section class="experience" id="experience">
+ <section class="experience" id="experience">
 
     <div class="section-title">
         <h2>Experience & Achievements</h2>
@@ -626,7 +630,7 @@
                     </div>
 
                 </div>
-<div class="certificates-list">
+ <div class="certificates-list">
 
     <!-- Python -->
 
@@ -707,7 +711,7 @@
 
     </div>
 
-</div>
+ </div>
 
             </div>
 
@@ -755,7 +759,7 @@
 
 
  <!-- Contact Section -->
-<section class="contact" id="contact">
+ <section class="contact" id="contact">
 
     <div class="section-title">
         <h2>Let's Work Together</h2>
@@ -772,7 +776,7 @@
 
         <!-- LEFT SIDE -->
 
-<div class="contact-info">
+ <div class="contact-info">
 
     <div class="info-box">
         <i class="fa-regular fa-envelope"></i>
@@ -815,7 +819,7 @@
         </div>
     </div>
 
-</div>
+ </div>
 
         <!-- RIGHT SIDE -->
 
@@ -839,12 +843,12 @@
 
     </div>
 
-</section>
+  </section>
 
 
-<!-- Footer -->
+ <!-- Footer -->
 
-<footer class="footer">
+ <footer class="footer">
 
     <div class="footer-content">
 
@@ -880,9 +884,25 @@
         <p>© 2026 Tanishka Patil. All Rights Reserved.</p>
     </div>
 
-</footer>
+ </footer>
 
-    <script src="js/script.js"></script>
+
+
+
+    <script src="js/script.js">
+        const reveals = document.querySelectorAll('.reveal');
+
+ window.addEventListener('scroll', () => {
+    reveals.forEach(reveal => {
+        const windowHeight = window.innerHeight;
+        const revealTop = reveal.getBoundingClientRect().top;
+
+        if (revealTop < windowHeight - 100) {
+            reveal.classList.add('active');
+        }
+    });
+ });
+    </script>
 
 </body>
 </html>

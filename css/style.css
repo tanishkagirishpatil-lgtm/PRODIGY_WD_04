@@ -1,3 +1,10 @@
+html,
+body{
+    overflow-x:hidden;
+    width:100%;
+}
+
+
 /* ==========================
    GOOGLE FONTS
 ========================== */
@@ -1790,6 +1797,13 @@ transition: all 0.4s ease;
 
 @media (max-width:768px){
 
+
+
+    .menu-toggle{
+    display:none;
+    font-size:1.5rem;
+    cursor:pointer;
+ }
     section{
         padding:80px 25px;
     }
@@ -1898,6 +1912,25 @@ transition: all 0.4s ease;
     .logo h3{
         font-size:18px;
     }
+
+    .hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    }
+
+   .hero-content{
+    width:100%;
+    max-width:100%;
+    margin:auto;
+    }
+
+   .hero-image{
+    width:100%;
+    max-width:320px;
+    margin:auto;
+     }
 }
 
 @media (max-width: 768px) {
@@ -2506,3 +2539,4 @@ transition: all 0.4s ease;
 
     transform:translateY(-50%);
 }
+

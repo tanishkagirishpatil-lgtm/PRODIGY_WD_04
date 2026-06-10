@@ -2613,6 +2613,20 @@ transition: all 0.4s ease;
 
 @media (max-width:768px){
 
+    .highlight-box{
+    flex-direction:column;
+    text-align:center;
+    gap:12px;
+   }
+
+   .highlight-box i{
+    margin-bottom:10px;
+   }
+
+   .highlight-box h4{
+    margin-bottom:5px;
+   }
+
     .journey .timeline{
         margin-top:20px;
         padding-left:20px;
@@ -2706,13 +2720,13 @@ transition: all 0.4s ease;
      }
 
      .hero,
-.about,
-.skills,
-.projects,
-.experience,
-.contact{
+       .about,
+     .skills,
+ .projects,
+ .experience,
+ .contact{
     padding-top:120px;
-}
+  } 
 
 
 }

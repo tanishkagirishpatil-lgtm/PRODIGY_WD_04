@@ -2613,40 +2613,50 @@ transition: all 0.4s ease;
 
 @media (max-width:768px){
 
-    @media (max-width:768px){
-
     .journey .timeline{
-        margin-left:0;
-        padding-left:25px;
+        margin-top:20px;
+        padding-left:20px;
+        border-left:2px solid #B7834D;
     }
 
     .journey .timeline-item{
-        position:relative;
-        padding-left:35px;
-        margin-bottom:30px;
+        margin-left:0;
+        padding-left:15px;
     }
 
     .journey .timeline-item span{
-        position:absolute;
-        left:-8px;
-        top:10px;
-        width:14px;
-        height:14px;
-        border-radius:50%;
-        background:#B7834D;
+        left:-28px;
+        top:6px;
     }
 
-    .journey .timeline-item h4{
-        font-size:1.1rem;
-        margin-bottom:8px;
-    }
+    .experience-left::before{
+    left:15px;
+     }
 
-    .journey .timeline-item p{
-        font-size:.95rem;
-        line-height:1.6;
-    }
+     .year{
+    min-width:90px;
+    font-size:14px;
+   }
 
- }
+   .year::before{
+    left:8px;
+   }
+
+   .experience-item{
+    gap:12px;
+   }
+
+   .experience-card{
+    padding:18px;
+   }
+
+   .experience-card h3{
+    font-size:1.5rem;
+   }
+
+   .experience-card li{
+    font-size:0.95rem;
+   }
 
   
  
@@ -2656,13 +2666,7 @@ transition: all 0.4s ease;
     padding-left:0;
  }
 
- .timeline{
-    left:25px;
- }
-
- .timeline-item{
-    margin-left:50px;
- }
+ 
 
   .experience-card,
  .achievement-card{

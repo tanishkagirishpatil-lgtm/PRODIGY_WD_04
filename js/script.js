@@ -332,3 +332,44 @@ window.addEventListener('scroll',()=>{
     }
 
 });
+
+const menuToggle =
+document.querySelector('.menu-toggle');
+
+const navLinks =
+document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click',()=>{
+
+    navLinks.classList.toggle('active');
+
+});
+
+
+/* ==========================
+   TYPING EFFECT
+========================== */
+
+const text = "Aspiring Web Developer";
+
+const typingElement =
+document.getElementById("typing-text");
+
+let index = 0;
+
+function typeText(){
+
+    if(index < text.length){
+
+        typingElement.innerHTML +=
+        text.charAt(index);
+
+        index++;
+
+        setTimeout(typeText,150);
+
+    }
+
+}
+
+window.addEventListener("load",typeText);

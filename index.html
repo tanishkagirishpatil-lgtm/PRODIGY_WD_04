@@ -49,14 +49,16 @@
             </ul>
 
         </nav>
-         <div class="menu-toggle">
-              <i class="fa-solid fa-bars"></i>
-       </div>
+        
        <a href="assets/resume/Tanishka_Patil_Resume.pdf"
    class="resume-btn">
             </i>
             Resume
         </a>
+
+         <div class="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+       </div>
 
     </header>
 
@@ -72,7 +74,8 @@
 
             <h1>Tanishka Patil</h1>
 
-            <h2>Aspiring Web Developer</h2>
+           <h2 id="typing-text"></h2>
+           
 
             <h3>Computer Engineering Student</h3>
 
@@ -851,23 +854,50 @@
 
         <!-- RIGHT SIDE -->
 
-        <form class="contact-form">
+        <form
+action="https://formsubmit.co/tanishkagirishpatil@gmail.com"
+method="POST"
+class="contact-form">
 
-            <label>Your Name</label>
-            <input type="text" placeholder="Enter your name">
+    <input type="hidden"
+           name="_captcha"
+           value="false">
 
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email">
+    <input type="hidden"
+           name="_subject"
+           value="New Portfolio Message">
 
-            <label>Message</label>
-            <textarea rows="5" placeholder="Write your message..."></textarea>
+    <label>Your Name</label>
+    <input
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        required>
 
-            <button type="submit">
-                Send Message
-                <i class="fa-regular fa-paper-plane"></i>
-            </button>
+    <label>Email</label>
+    <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required>
 
-        </form>
+    <label>Message</label>
+    <textarea
+        name="message"
+        rows="5"
+        placeholder="Write your message..."
+        required></textarea>
+
+    <button type="submit">
+        Send Message
+        <i class="fa-regular fa-paper-plane"></i>
+    </button>
+
+   <input type="hidden"
+       name="_next"
+       value="https://tanishkagirishpatil-lgtm.github.io/PRODIGY_WD_04/">
+
+</form>
 
     </div>
 
